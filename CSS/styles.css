@@ -1,0 +1,402 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+/* ------FUERA DE MEDIA QUERYS------ */
+/* ------TAMAÑO GRANDE------ */
+
+#header {
+    display: flex;
+    height: 30vh;
+}
+
+.menu {
+    position: relative;
+    top: 18vh; left: 20px;
+    list-style-type: none;
+    padding: 10px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    margin-left: 10px;
+}
+
+.menu li :hover {
+    font-style: italic;
+    color: #008AFF;
+}
+
+.logo {
+    margin: 20px;
+    width: 150px;
+    position: relative;
+    top: 4vh; left: 26px;
+    }
+
+.tituloHeader {
+    font-size: 80px;
+    font-weight: bold;
+    color: white;
+    position: relative;
+    top: 12vh; left: 5px;
+    }
+
+h2 {
+    font-size: 32px;
+    font-style: none;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.footer {
+    display: flex;
+    list-style-type: none;
+    justify-content: flex-end;
+}
+
+.footer li a {
+    text-decoration: none;
+    padding: 1px;
+    margin: 2px;
+}
+
+.footer li :hover {
+    background-color: black;
+}
+
+.footer__socialNetworks a {
+    color: white;
+    height: 48px;   
+    width: 48px;
+    list-style-type: none;
+    border-radius: 50%;
+    margin: 0 20px;
+    transition: transform 0, 5s;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.footer__socialNetworks a:hover {
+    transform: scale(1.2);
+    color: #008AFF;
+}
+
+/*------------- INDEX HTML -------------*/
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 3fr .5fr;
+    grid-template-areas:
+    "header header header"
+    "fondoIndex fondoIndex fondoIndex"
+    "footer footer footer"
+    ;
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+}
+
+.header {
+    grid-area: header
+}
+
+.fondoIndex {
+    grid-area: fondoIndex;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+.gridPadre1 {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.gridPadre1 div {
+    border: solid 15px white;
+    display: flex;
+}
+
+.gridPadre2 iframe {
+    display: inline-block;
+    border: solid 15px white;
+    margin-top: 30px;
+    margin-left: 36%;
+}
+
+.bodyIndex {
+    background-color: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.fondoIndex {
+    background-image: url("../img/fondoIndex.jpg");
+    background-size: 90%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/*------------- ABOUT US HTML -------------*/
+
+.bodyAbout {
+    background-color: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.fondoAbout {
+    background-image: url("../img/fondoAbout.jpg");
+    background-size: 90%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.sectionAbout {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 30px;
+    padding: 30px;
+}
+
+p {
+    color: white;
+    font-size: 18px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.imgAbout {
+    margin: 10px;
+    padding: 10px;
+}
+
+/*------------- CONTACT HTML -------------*/
+
+.bodyContact {
+    background-color: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.fondoContact {
+    background-image: url("../img/fondoContact.jpg");
+    background-size: 90%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.formulario {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+
+.formulario input {
+    width: 450px;
+    height: 50px;
+    margin: 20px;
+    padding: 13px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 20px;
+}
+
+.formulario textarea {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 20px;
+    width: 450px;
+    height: 200px;
+    margin: 20px;
+    padding: 13px;
+}
+
+#buttonFormulario{
+    text-decoration: none;
+    font-size: 15px;
+    padding: 10px 20px;
+    width: 90px;
+    top: 10px 20px;
+    left: 91%;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+}
+
+#buttonFormulario:hover{
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/*------------- NEWS HTML -------------*/
+
+.bodyNews{
+    background-color: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.fondoNews {
+    background-image: url("../img/fondoNews.jpg");
+    background-size: 90%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.sectionNews {
+    display: flex;
+    flex-direction: column;
+    margin: 35px;
+    padding: 35px;
+}
+
+.sectionNews h3 {
+    margin: 5px;
+    padding: 5px;
+}
+
+.divFiestas {
+    display: flex;
+    margin: 5px;
+    padding: 10px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.divFiestas img {
+    padding: 10px;
+}
+
+.divFiestas ul {
+    margin: 10px;
+    padding: 10px;
+}
+
+.divEventos {
+    display: flex;
+    margin: 5px;
+    padding: 10px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.divEventos img {
+    padding: 10px;
+}
+
+.divEventos ul {
+    margin: 10px;
+    padding: 10px;
+}
+
+.divSemanales {
+    display: flex;
+    margin: 5px;
+    padding: 10px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.divSemanales img {
+    padding: 10px;
+}
+
+.divSemanales ol {
+    margin: 10px;
+    padding: 10px;
+}
+
+/*------------- RECIPES HTML -------------*/
+
+.bodyRecipes {
+    background-color: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.fondoRecipes {
+    background-image: url("../img/fondoRecipes.jpg");
+    background-size: 90%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.sectionRecetas {
+    display: flex;
+    align-items: stretch;
+    margin: 40px;
+    padding: 30px;
+    justify-content: space-evenly;
+    align-content: flex-end;
+    flex-direction: column;
+}
+
+h3 {
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center
+}
+
+.tartas {
+    display: flex;
+}
+
+.muffins {
+    display: flex;
+}
+
+
+/* ------MEDIA QUERYS------ */
+
+/*------TAMAÑO MEDIANO------*/
+/* @media (max-width: 768px) {
+    .body {
+        background-color: #000000;
+    }
+} */
+
+/*------TAMAÑO CHICO------*/
+/* @media (max-width: 420px) {
+    .body {
+        background-color: #000000;
+}
+} */
